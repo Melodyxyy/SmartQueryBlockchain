@@ -32,9 +32,13 @@ truffle compile
 truffle migrate
 
 ## Project Structure
+
 contracts/: Smart contract code
+
 migrations/: Truffle migration scripts
+
 tests/: Test scripts
+
 docs/: Documentation files
 
 ## Technical Details
@@ -42,10 +46,11 @@ docs/: Documentation files
 Our solution comprises smart contracts that facilitate on-chain query execution. Key contracts include:
 
 QueryExecutor.sol: Handles the execution of complex queries.
+
 DataStorage.sol: Manages on-chain storage of relevant data.
 
 ###  Data Handling
-Data is securely handled on-chain to ensure transparency and integrity. Off-chain storage is implemented with [chosen technology], providing a resilient way to retrieve information for smart contract execution.
+Data is securely handled on-chain to ensure transparency and integrity. Off-chain storage is implemented with chosen technology such as MongoDB, providing a resilient way to retrieve information for smart contract execution.
 
 ## Contributing
 We welcome contributions to enhance and refine our project. Follow these steps to contribute:
