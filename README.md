@@ -50,7 +50,7 @@ QueryExecutor.sol: Handles the execution of complex queries.
 DataStorage.sol: Manages on-chain storage of relevant data.
 
 ###  Data Handling
-Data is securely handled on-chain to ensure transparency and integrity. Off-chain storage is implemented with chosen technology such as MongoDB, providing a resilient way to retrieve information for smart contract execution.
+Data is securely handled on-chain to ensure transparency and integrity. Off-chain storage is implemented with chosen technology such as MongoDB/AWS/HDFS/IPFS/HBase, providing a resilient way to retrieve information for smart contract execution.
 
 ## Contributing
 We welcome contributions to enhance and refine our project. Follow these steps to contribute:
