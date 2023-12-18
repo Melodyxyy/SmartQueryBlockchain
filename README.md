@@ -21,6 +21,10 @@ Ensure you have the following tools and frameworks installed:
 Install dependencies:
 
 npm install
+npm install web3
+npm install react-router-dom
+npm install @types/react-router-dom
+npm install react-search-input
 
 2.  **Configure Metamask:**
 
