@@ -1,0 +1,26 @@
+// src/components/QueryComponent/QueryComponent.test.tsx
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import QueryComponent from './QueryComponent';
+
+// Mock web3 functions or provide a valid Ethereum environment for testing
+jest.mock('web3', () => ({
+  // Mock web3 functions here
+}));
+
+describe('QueryComponent styles', () => {
+  it('applies styles correctly', () => {
+    render(<QueryComponent contractAddress="YOUR_CONTRACT_ADDRESS" contractABI={[]} />);
+    
+    const container = screen.getByTestId('query-component-container');
+    
+    // Check if the styles are applied correctly
+    expect(container).toHaveStyle(`
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    `);
+  });
+});
