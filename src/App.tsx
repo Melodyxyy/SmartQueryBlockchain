@@ -4,12 +4,12 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import HomePage from './containers/HomePage/HomePage';
 import DashboardPage from './containers/DashboardPage/DashboardPage';
 import OnChainQueriesPage from './containers/OnChainQueriesPage/OnChainQueriesPage'; // Import OnChainQueriesPage
-
-import ApiService from './services/ApiService';
 import Helpers from './utils/helpers';
+
+
 import './App.css';
 
-const apiService = new ApiService('https://api.example.com');
+
 
 const SearchResultsPage: React.FC = () => {
   // Display search results based on your requirements
@@ -31,7 +31,7 @@ const App: React.FC = () => {
         <nav className="app-menu">
           <ul>
             <li>
-              <Link to="./">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/dashboard">Dashboard</Link>

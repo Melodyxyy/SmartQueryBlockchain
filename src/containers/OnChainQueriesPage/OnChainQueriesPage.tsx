@@ -1,6 +1,6 @@
-// OnChainQueriesPage.tsx
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import QueryComponent from '../../components/QueryComponent/QueryComponent';  
+import{ useNavigate } from 'react-router-dom';
 
 const OnChainQueriesPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -12,23 +12,26 @@ const OnChainQueriesPage: React.FC = () => {
     // Navigate to the search results page
     navigate(`/search-results?q=${searchQuery}`);
   };
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const contractABI: any[] | undefined = undefined;
 
   return (
     <div>
       <h2>On-Chain Queries</h2>
 
       <section>
-      <input
-        type="text"
-        placeholder="Enter your query"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+        <input
+          type="text"
+          placeholder="Enter your query"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
       </section>
 
       <section>
         <h3>DeFi Innovations</h3>
+
         <p>
           The ability to perform complex on-chain queries in DeFi has led to groundbreaking solutions. Here are some notable use cases:
         </p>

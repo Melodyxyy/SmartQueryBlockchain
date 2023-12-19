@@ -62,12 +62,13 @@ const HomePageContent: React.FC = () => {
         <h2>Links to Other Pages</h2>
         <p>
           Explore more about Smart Query Blockchain DApp:
+          </p>
           <ul>
             <li><a href="/dashboard">Dashboard</a></li>
             <li><a href="/on-chain-queries">On-Chain Queries</a></li>
             {/* Add more links to relevant pages */}
           </ul>
-        </p>
+    
       </section>
 
       <section>
