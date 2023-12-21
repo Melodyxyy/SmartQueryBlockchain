@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const defaultProps = {
-  title: "Query Storage Slot",
+  title: "Smart Query Blockchain",
   description:
     "Easily query EIP-1967 & custom storage slots for contracts on any EVM chain",
   imgRelPath: "/metaIMG.png",
