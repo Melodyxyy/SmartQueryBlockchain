@@ -1,0 +1,36 @@
+/* Homepage Content Styles */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd; /* Add a border */
+  margin-top: 20px; 
+}
+
+
+
+.home-page-content section {
+  margin-bottom: 20px;
+  /* Add more styling properties as needed */
+}
+
+.home-page-content h2 {
+  font-size: 1.5em;
+  /* Add more styling properties as needed */
+}
+
+.home-page-content p {
+  font-size: 1em;
+  /* Add more styling properties as needed */
+}
+
+.home-page-content ul {
+  font-size: 1em;
+  /* Add more styling properties as needed */
+}
+
+.home-page-content a {
+  color: blue;
+  text-decoration: underline;
+  /* Add more styling properties as needed */
+}
