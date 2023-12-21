@@ -15,6 +15,8 @@ import Footer from "@/components/Footer";
 import GitHubLink from "@/components/GitHubLink";
 import MetaHead from "@/components/MetaHead";
 import App from './app';
+import RegisterForm from "@/components/RegisterForm";
+
 
 interface Props {
   primaryNetworkOptions: NetworkOption[];
@@ -28,6 +30,7 @@ const Home: NextPage<Props> = ({
   primaryNetworkOptions,
   secondaryNetworkOptions,
 }) => {
+  
   const [address, setAddress] = useState<string>();
   const [selectedNetworkOption, setSelectedNetworkOption] =
     useState<SelectedOptionState>({
@@ -97,6 +100,7 @@ const Home: NextPage<Props> = ({
   return (
     
     <>
+
       <div>
       <App />
       {/* Other contents */}

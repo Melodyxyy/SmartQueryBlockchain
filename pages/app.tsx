@@ -11,6 +11,8 @@ import OnChainQueriesPage from '../containers/OnChainQueriesPage/OnChainQueriesP
 import UseCasesPage from './UseCasesPage';
 import DataCategoriesPage from './DataCategoriesPage';
 import SearchResultsPage from './SearchResultsPage';
+import LoginForm from "@/components/LoginForm";
+import Link from "next/link";
 
 // Main App component
 const App: React.FC = () => {
@@ -41,6 +43,9 @@ const App: React.FC = () => {
           <li>
             <a onClick={() => router.push('/data-categories')}>Data Categories</a>
           </li>
+          <li>
+            <a onClick={() => router.push('/RegisterForm')}>Login</a>
+          </li>
         </ul>
       </nav>
       <main>
@@ -53,6 +58,7 @@ const App: React.FC = () => {
         {router.pathname === '/use-cases' && <UseCasesPage />}
         {router.pathname === '/data-categories' && <DataCategoriesPage />}
         {router.pathname === '/search-results' && <SearchResultsPage />}
+        {router.pathname === '/LoginForm' && <LoginForm />}
       </main>
     </div>
   );

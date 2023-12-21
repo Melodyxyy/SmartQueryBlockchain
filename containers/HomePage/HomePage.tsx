@@ -11,8 +11,6 @@ const HomePage: React.FC<HomePageProps> = () => {
     <div className={styles.container}>
     <div className={styles['home-page-content']}>
         
-      <h1>Welcome to the smart-query-blockchain DApp</h1>
-      <p>This is the home page of the smart-query-blockchain DApp.</p>
      
       <div>
       <section>
